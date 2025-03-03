@@ -1,0 +1,49 @@
+:root {
+    --color-p-footer: #fff;
+    --color-bg-button-footer: #fff;
+}
+
+footer {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p,
+    button {
+        font-size: 1rem;
+    }
+}
+
+.footer-text {
+    p {
+        color: var(--color-p-footer);
+    }
+}
+
+.footer-button {
+    button {
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--color-bg-button-footer);
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all 0.15s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+            stroke: #171717;
+            stroke-width: 2;
+        }
+    }
+}

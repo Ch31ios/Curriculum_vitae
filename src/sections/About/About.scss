@@ -1,0 +1,17 @@
+:root {
+    --color-p-about: #d1d5db;
+}
+
+.about {
+    padding: 1rem 0;
+
+    p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: var(--color-p-about);
+    }
+
+    span {
+        font-weight: bold;
+    }
+}

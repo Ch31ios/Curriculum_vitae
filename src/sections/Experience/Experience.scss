@@ -1,0 +1,77 @@
+:root {
+    --color-text-experience: #d1d5db;
+    --color-border-experience: #262626;
+    --opacity-text-experience: 0.7;
+}
+
+.experience {
+    padding: 1rem 0;
+    gap: 20px;
+    display: grid;
+    color: var(--color-text-experience);
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+.experience-content {
+    padding: 0 0 0 1.25rem;
+    gap: 14px;
+    display: grid;
+    border-left: 2px solid var(--color-border-experience);
+
+    // start_date - end_date
+    time {
+        margin: 0.3125rem 0 0 0;
+        font-size: 0.75rem;
+        opacity: var(--opacity-text-experience);
+    }
+
+    // description
+    p {
+        line-height: 1.7;
+        font-size: 0.875rem;
+        opacity: var(--opacity-text-experience);
+    }
+}
+
+.position-company {
+    display: grid;
+    gap: 4px;
+
+    // position
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    h3,
+    span {
+        line-height: 1.5;
+    }
+
+    // company
+    a {
+        width: fit-content;
+        gap: 4px;
+        display: flex;
+        align-items: center;
+        font-size: 0.90625rem;
+        text-decoration: none;
+        color: var(--color-text-experience);
+        opacity: var(--opacity-text-experience);
+        transition: all 0.15s ease;
+
+        &:hover {
+            gap: 6px;
+            opacity: 1;
+        }
+
+        svg {
+            width: 12px;
+            height: 12px;
+            stroke: currentColor;
+            stroke-width: 2;
+        }
+    }
+}

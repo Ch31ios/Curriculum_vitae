@@ -1,0 +1,83 @@
+:root {
+    --color-text-education: #d1d5db;
+    --color-border-education: #262626;
+    --color-bg-tags-education: #202020;
+}
+
+.education {
+    padding: 1rem 0;
+    gap: 20px;
+    display: grid;
+    color: var(--color-text-education);
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+.education-content {
+    padding: 0.75rem;
+    gap: 7px;
+    display: grid;
+    border-radius: 6px;
+    border: 1px solid var(--color-border-education);
+
+    // degree
+    h3 {
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+
+    // brief
+    p {
+        opacity: 0.7;
+        line-height: 1.6; // for brief and all info
+        font-size: 0.875rem;
+    }
+}
+
+.education-info {
+    margin: 0.3125rem 0 0 0;
+    gap: 7px;
+    display: flex;
+    flex-wrap: wrap;
+
+    // all info
+    p {
+        padding: 0.25rem 0.5rem;
+        opacity: 1;
+        border-radius: 6px;
+        background-color: var(--color-bg-tags-education);
+        border: 1px solid var(--color-border-education);
+
+        // start-date - end-date, location
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+            gap: 4px;
+            display: flex;
+            align-items: center;
+        }
+
+        svg {
+            width: 12px;
+            height: 12px;
+            stroke: #fff;
+            stroke-width: 2;
+        }
+    }
+
+    p,
+    a {
+        font-size: 0.75rem;
+    }
+
+    // institution
+    a {
+        color: var(--color-text-education);
+        transition: all 0.15s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

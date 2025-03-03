@@ -1,0 +1,67 @@
+:root {
+    --font-size-span-navbar: 1.1rem;
+    --color-text-span-navbar: #fff;
+    --color-bg-navbar: rgb(23, 23, 23, 0.8);
+}
+
+nav {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+    backdrop-filter: blur(12px);
+    background-color: var(--color-bg-navbar);
+
+    span {
+        margin-right: 1.875rem;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: var(--font-size-span-navbar);
+        color: var(--color-text-span-navbar);
+        opacity: 0.8;
+        transition: all 0.15s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.items {
+    gap: 4px;
+    display: flex;
+
+    button {
+        all: unset;
+        cursor: pointer;
+    }
+
+    button,
+    a {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        opacity: 0.8;
+        transition: all 0.15s ease;
+
+        &:hover {
+            opacity: 1;
+            background-color: #262626;
+        }
+
+        svg {
+            width: 24px;
+            height: 18px;
+            fill: #fff;
+            stroke: #fff;
+            stroke-width: 2;
+        }
+    }
+}

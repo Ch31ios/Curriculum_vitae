@@ -1,0 +1,49 @@
+{
+    "nickname": "johndoe123",
+    "name": "Jhon Doe",
+    "description": "a Software Engineer with experience in system optimization, technical support, and automation solutions at top-tier companies. Currently focused on advancing technical expertise through academic and professional challenges.",
+    "links": {
+        "linkedin": "https://linkedin.com",
+        "instagram": "https://instagram.com",
+        "github": "https://github.com"
+    },
+    "experience": [
+        {
+            "start_date": "Jan 2023",
+            "end_date": "Present",
+            "position": "Technical Support Engineer",
+            "company": "Google",
+            "link": "https://google.com",
+            "description": "Provide comprehensive support for internal tools and systems, ensuring seamless functionality and enhancing team productivity through troubleshooting and process optimization."
+        },
+        {
+            "start_date": "Jun 2022",
+            "end_date": "Dec 2022",
+            "position": "Software Engineering Intern",
+            "company": "Microsoft",
+            "link": "https://microsoft.com",
+            "description": "Assisted in developing software solutions and implemented automation tools, reducing operational costs and improving workflow efficiency."
+        }
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Science in Computer Science",
+            "brief": "Specialized in software development, algorithms, and system design.",
+            "institution": "Massachusetts Institute of Technology (MIT)",
+            "link": "https://www.mit.edu",
+            "start_date": "Sep 2021",
+            "end_date": "Present",
+            "location": "Cambridge, MA, USA"
+        },
+        {
+            "degree": "Certificate in Artificial Intelligence",
+            "brief": "Focused on machine learning fundamentals and AI applications.",
+            "institution": "Stanford University",
+            "link": "https://www.stanford.edu",
+            "start_date": "Jan 2020",
+            "end_date": "Dec 2020",
+            "location": "Stanford, CA, USA"
+        }
+    ],
+    "skills": []
+}

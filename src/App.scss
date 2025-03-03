@@ -1,0 +1,49 @@
+:root {
+    --color-bg-app: #171717;
+    --color-text-app: #ffffff;
+    --max-width-app: 896px;
+
+    ::selection {
+        background-color: #404040;
+    }
+
+}
+
+html {
+    color-scheme: dark;
+    background-color: var(--color-bg-app);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    min-height: 100dvh;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--color-bg-app);
+
+    nav,
+    main,
+    footer,
+    .error {
+        max-width: var(--max-width-app);
+        justify-self: center;
+    }
+
+    main,
+    .error {
+        padding: 1rem 2rem;
+    }
+
+    main {
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+}
